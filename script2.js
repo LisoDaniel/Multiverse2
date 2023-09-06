@@ -8,8 +8,12 @@ var splashScreen = document.querySelector('.splash');
 function logar(){
 
     var password = document.getElementById('password').value;
-
-    if(password == "PASSWORD111"){
+    var encrypted = CryptoJS.AES.encrypt(password, 'chave');
+    var decrypted = CryptoJS.AES.decrypt(
+      password,
+      'chave'
+    );
+    if(decrypted == "50415353574f5244313131"){
         alert('SUCESSO!!!!');
         location.href = "multiverse.html";
        }else{
