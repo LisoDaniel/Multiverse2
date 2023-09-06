@@ -10,7 +10,7 @@ function logar(){
     var password = document.getElementById('password').value;
     var encrypted = CryptoJS.AES.encrypt(password, 'chave');
     var decrypted = CryptoJS.AES.decrypt(
-      password,
+      encrypted,
       'chave'
     );
     if(decrypted == "50415353574f5244313131"){
