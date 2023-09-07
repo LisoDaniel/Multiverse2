@@ -2,7 +2,7 @@ function logar(){
 
     var password = document.getElementById('password').value;
     var encrypted = CryptoJS.MD5(password);
-    if(encrypted == 'f7f1c73df4561a07bfde1ff55f448056'){
+    if(encrypted == '4dd74be7c791f54d685fd062109e86f2'){
         alert('SUCESSO!!!!');
         location.href = "multiverse.html";
        }else{
