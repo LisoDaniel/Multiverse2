@@ -3,7 +3,7 @@ const horasEl = document.getElementById("horas");
 const minutosEl = document.getElementById("minutos");
 const segundosEl = document.getElementById("segundos");
 
-const newYears = "21 Apr 2024"
+const newYears = "22 Apr 2024"
 
 function countdonwn(){
 
